@@ -10,8 +10,8 @@ provider "aws" {
 
 module "devinstance" {
   source  = "app.terraform.io/kusama-sso-demo/devinstance/aws"
-  version = "0.0.2"
+  version = "0.0.3"
 
-  hello_tf_instance_type = "t2.small"
+  hello_tf_instance_type = "t2.large"
   prefix = "kusama"
 }
